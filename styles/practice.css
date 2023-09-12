@@ -1,0 +1,117 @@
+
+/*
+    tag -> specificitate 1;
+    class -> specificitate 10;
+    id -> specificitate 100;
+    inline -> specificitate 1000; 
+*/
+
+
+/* .customInput[type*="a"] {
+    border-color: blue;
+} */
+.buton {
+    border: 1px solid #616161;
+    width: 54px;
+    height: 22px;
+    background-color: #ebebeb;
+    border-radius: 2px;
+    line-height: 22px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buton:hover {
+    background-color: #afaeae;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    font-size: 100px;
+}
+
+.content {
+    border: 1px solid black;
+}
+
+
+
+/* specificitate: 20 */
+.content .myCustomParagraph {
+    color: violet;
+}
+
+
+/* specificitate: 20*/
+.content > .myCustomParagraph {
+    color: green;
+}
+
+.content > .myCustomParagraph.errorMessage,
+
+
+
+.hint {
+    font-size: 10px;
+}
+
+
+input[type="email"] + p {
+    display: none;
+}
+input[type="email"]:invalid + p {
+    display: block;
+    color: red
+}
+
+
+
+
+.exempluMostenire {
+    color: red;
+    font-size: 32px;
+}
+
+
+.sub-paragraf-mostenire {
+    font-size: 16px;
+}
+
+.subTittle {
+    display: none;
+}
+
+.blockInputs {
+    display: block;
+}
+p {
+    display: block;
+}
+p span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.inlineBlockDiv,
+.inlineDiv {
+    border: 1px solid cyan;
+}
+
+.inlineDiv {
+    display: inline;
+}
+
+.inlineBlockDiv {
+    display: inline-block;
+}
+
+.inlineSpan {
+    display: inline;
+}
+
+.inlineBlockSpan {
+    display:inline-block;
+    width: 300px;
+}

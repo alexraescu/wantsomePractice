@@ -1,0 +1,100 @@
+/* .myCustomLabel {
+    display: inline-block;
+    width: 250px;
+}
+
+.inputContainer {
+    height: 30px;
+}
+
+.cornerSection {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+#bmwLogo {
+    width: 410px;
+    border-radius: 50%;
+    border: 62px solid black;
+}
+#corner1,
+#corner4 {
+    background-color: white;
+    border-radius: 50%;
+}
+
+#corner2,
+#corner3 {
+    background-color: blue;
+    border-radius: 50%;
+}
+
+#corner1 {
+    border-top-left-radius: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#corner2 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#corner3 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 0;
+}
+
+#corner4 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 100%;
+    background: red;
+    visibility: hidden;
+}
+
+
+.visibilityExample {
+    border: 1px solid black;
+}
+
+.visibilityHidden p {
+    visibility: hidden;
+}
+
+
+.displayNone p {
+    display: none;
+}
+
+#email_input {
+    visibility: hidden;
+} */
+
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label::before {
+    width: 20px;
+    height: 20px;
+    content: '-';
+    display: inline-block;
+}
+input[type="radio"]:checked + label::before {
+    background: green;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/016/746/182/non_2x/green-check-mark-icon-symbol-logo-in-a-circle-tick-symbol-green-color-illustration-free-vector.jpg");
+    background-size: cover;
+}
+
+input[type="radio"]:not(:checked) + label::before {
+    background: red;
+}

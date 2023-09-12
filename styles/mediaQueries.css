@@ -1,0 +1,49 @@
+.menuItem {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.active {
+    background-color: #66AD5C;
+}
+
+
+.topNavigation {
+    background-color: #333333;
+    position: relative;
+}
+
+@media only screen and (min-width: 700px) {
+    .menuItem  {
+        display: inline-block;
+    }
+    .burgerMenu {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .menuItem:not(.active)  {
+        display: none;
+    }
+
+    .burgerMenu {
+        display: block;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        border: 1px solid white;
+        top: 5px;
+        right: 15px;
+        background-image: url("https://previews.123rf.com/images/fokaspokas/fokaspokas1809/fokaspokas180900164/108564673-hamburger-menu-web-icon-white-icon-with-shadow-on-transparent-background.jpg?fj=1");
+        background-size: cover;
+    }
+}
