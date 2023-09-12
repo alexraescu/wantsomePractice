@@ -1,0 +1,12 @@
+.productContainer {
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 40px;
+    border: 1px solid red;
+}
+
+.card {
+    border: 1px solid black;
+    height: 400px;
+    flex-grow: 1
+}

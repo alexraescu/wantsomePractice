@@ -9,8 +9,8 @@
     </head>
     <body>
 
-        <a href="http://google.com" target="_blank">Google</a>
-        <a href="index.html">Acasa</a>
+        <a href="http://google.com" target="_blank" style="background-color:yellow">Google</a>
+        <a href="index.html" style="background-color: #cecece ">Acasa</a>
         <a href="weather.html">Vezi vremea</a>
         <a href="sesiune2.html">Sesiune 2</a>
         <h1>HTML Lists</h1>
@@ -72,26 +72,11 @@
         </ol>
 
         <form action="weather.html" target="_blank" method="GET">
-            <label for="input_nume">Your name</label>
-            <input id="input_nume" type="text" />
-            <br>
-            <br>
-            <label>Your email</label>
-            <input type="text" />
-            <br>
-
-            <br>
-            <label>Toping:</label>
-            <input type="radio" name="sosuri" id="sos_suprem"/> <label for="sos_suprem">Supreme </label>
-            <input type="radio" name="sosuri" id="sos_vegetarian"/> <label for="sos_vegetarian">Vegetarian</label>
-            <input type="radio" name="sosuri"id="sos_hawaii"/> <label for="sos_hawaii">Hawaian</label>
-
-            <br>
-            <br>
+            
             <label>Sosuri</label>
-            <select>
-                <option>Tomato</option>
-                <option selected>Pesto</option>
+            <select name="sos">
+                <option value="tomato">Rosii</option>
+                <option value="pesto" selected>Pesto</option>
             </select>
 
             <br>
